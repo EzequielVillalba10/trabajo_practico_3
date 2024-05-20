@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-
+	
 		<meta charset="UTF-8">
 		<title>Formulario de cliente</title>
+		<link rel="stylesheet" href="/css/styles.css">
+		
 	</head>
-<body>
-	<header>
+<body class="fondoFormulario">
+
+	<header id="registro">
 			<h1>Registro de cliente</h1>
 	</header>
 	
-	<form action="#" method="post">
+	<form action="#" method="post" >
 	
-	<label for="dni">DNI:  </label>
-	<input type="number" id ="dni" name="dni" required="required"><br> 
+	<label for="dni" >DNI:  </label>
+	<input type="number" id ="dni" name="dni" required="required" class="campo"><br> 
 	
 	
 	<label for="nombres">Nombres:  </label>
-	<input type="text" id ="nombres" name="nombres" required><br> 
+	<input type="text" id ="nombres" name="nombres" required class="campo"><br> 
 	
 	
 	<label for="apellido">Apellido:  </label>
-	<input type="text" id ="apellido" name="apellido" required><br> 
+	<input type="text" id ="apellido" name="apellido" required class="campo"><br> 
 	
 	
 	<label for="fechaNacimiento">Fecha de Nacimiento:  </label>
-	<input type="date" id ="fechaNacimiento" name="fechaNacimiento" required><br> 
+	<input type="date" id ="fechaNacimiento" name="fechaNacimiento" required class="campo"><br> 
 	
 	
-	
-	Sex: <input type="radio" name="sex" value="male">Masculino
+		<label for="sex" class="titulospequeños">Elegir Genero: </label>	
+		 <input type="radio" name="sex" value="male">Masculino
 		<input type="radio" name="sex" value="famale">Femenino 
 		<input type="radio" name="sex" value="x">x <br>
 		
 		
 		
 		<label for="correoElectronico">Correo Electronico: </label>
-		<input type="email" id ="correoElectronico" name="correoElectronico" required><br> 
+		<input type="email" id ="correoElectronico" name="correoElectronico" required class="campo"><br> 
 		
 		
 		<label for="domicilio">Domicilio:  </label>
-		<input type="text" id ="domicilio" name="domicilio" required><br> 
+		<input type="text" id ="domicilio" name="domicilio" required class="campo"><br> 
 	
 		
 		<label for="provincia">Provincia:  </label>
-		<select id="provincia" name="provincia" required>
+		<select id="provincia" name="provincia" required >
 			<option value="JUJUY">Jujuy</option>
 			<option value="SALTA">Salta</option>
 			<option value="TUCUMAN">Tucuman</option>
@@ -72,9 +75,11 @@
 		</select><br>		
 		
 		<label for="numeroTelefono">Numero de Telefono:  </label>
-		<input type="number" id ="numeroTelefono" name="numeroTelefono"	><br> 	
+		<input type="number" id ="numeroTelefono" name="numeroTelefono"	class="campo"><br> 	
 		
-		<label>Cateogoria de Interes</label><br>
+	
+		
+		<label class="titulospequeños">Cateogoria de Interes</label><br>
 		<label for="categoria1">
 		<input type="checkbox" id="categoria1"
 		name="categoria" value="1">
@@ -93,28 +98,35 @@
 		Categoria3
 		</label><br>
 		
-		<label for="sugerencias">Sugerencias para la empresa:</label>
+		<label for="sugerencias" class="titulospequeños">Sugerencias para la empresa:</label><br>
 		<textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea><br>
 		
 		<label for="password">Password</label>
-		<input type="password" id="password" name="password" required><br>
+		<input type="password" id="password" name="password" required class="campo"><br>
 		
 	
 		<label for="terminos">Acepto los terminos y condiciones</label>
 		<input type="checkbox" id="terminos" name="terminos" required><br>
 		
 		<label for="informacionEmpresa">Acepto recibir informacion relativa a la empresa</label>
-		<input type="checkbox" id="informacionEmpresa" name="informacionEmpresa">
+		<input type="checkbox" id="informacionEmpresa" name="informacionEmpresa"><br>
 		
 		
-		<button type="submit">Registrar</button>
+		<button type="submit" id="boton-registrar">Registrar</button>
 	</form>
 	
-	<footer>
+	
+    
+	
+	
+	<footer id="piePagina">
 	<p>Medios de contacto</p>
 	<a href="https://www.facebook.com/universidadnacionaldejujuy/?locale=es_LA">Facebook</a>
 	<a href="https://www.unju.edu.ar/">Sitio Oficial</a>
 	
 	</footer>
+	
+	
+	
 </body>
 </html>
