@@ -4,10 +4,10 @@
 	
 		<meta charset="UTF-8">
 		<title>Formulario de cliente</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="../static/css/styles.css">
 		
 	</head>
-<body class="fondoFormulario">
+<body >
 
 	<header id="registro">
 			<h1>Registro de cliente</h1>
@@ -26,16 +26,15 @@
 	<label for="apellido">Apellido:  </label>
 	<input type="text" id ="apellido" name="apellido" required class="campo"><br> 
 	
+		<div class="seleccionGenero">
+				<div class="nombreInput">Género:</div> 	
+				<div class="generosDisponibles">
+					<label for="generoM"> Masculino<input id="generoM" type="radio" name="genero"></label>
+					<label for="generoF">Femenino<input id="generoF" type="radio" name="genero"></label>
+					<label for="generoX">x<input id="generoX" type="radio" name="genero"></label> <br>
+				</div>
+		    </div>
 	
-	<label for="fechaNacimiento">Fecha de Nacimiento:  </label>
-	<input type="date" id ="fechaNacimiento" name="fechaNacimiento" required class="campo"><br> 
-	
-	
-		<label for="sex" class="titulospequeños">Elegir Genero: </label>	
-		 <input type="radio" name="sex" value="male">Masculino
-		<input type="radio" name="sex" value="famale">Femenino 
-		<input type="radio" name="sex" value="x">x <br>
-		
 		
 		
 		<label for="correoElectronico">Correo Electronico: </label>
@@ -47,7 +46,8 @@
 	
 		
 		<label for="provincia">Provincia:  </label>
-		<select id="provincia" name="provincia" required >
+		<select id="provincia" name="provincia" required>
+			<option value="">Selecciona una provincia</option>
 			<option value="JUJUY">Jujuy</option>
 			<option value="SALTA">Salta</option>
 			<option value="TUCUMAN">Tucuman</option>
