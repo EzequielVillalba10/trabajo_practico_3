@@ -6,6 +6,9 @@
 		<title>Formulario de cliente</title>
 		<link rel="stylesheet" href="../static/css/styles.css">
 		
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
+		
 	</head>
 <body >
 
@@ -13,6 +16,7 @@
 			<h1>Registro de cliente</h1>
 	</header>
 	
+	<main>
 	<form action="#" method="post" >
 	
 	<label for="dni" >DNI:  </label>
@@ -79,7 +83,7 @@
 		
 	
 		
-		<label class="titulospequeños">Cateogoria de Interes</label><br>
+		<div class="nombreInput">Categorias de interés:<br>
 		<label for="categoria1">
 		<input type="checkbox" id="categoria1"
 		name="categoria" value="1">
@@ -97,7 +101,7 @@
 		name="categoria" value="3">
 		Categoria3
 		</label><br>
-		
+		</div>
 		<label for="sugerencias" class="titulospequeños">Sugerencias para la empresa:</label><br>
 		<textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea><br>
 		
@@ -115,16 +119,20 @@
 		<button type="submit" id="boton-registrar">Registrar</button>
 	</form>
 	
-	
+	</main>
     
 	
 	
-	<footer id="piePagina">
-	<p>Medios de contacto</p>
-	<a href="https://www.facebook.com/universidadnacionaldejujuy/?locale=es_LA">Facebook</a>
-	<a href="https://www.unju.edu.ar/">Sitio Oficial</a>
-	
-	</footer>
+													<!-- Pie de la pagina -->
+    		<footer class="pie-de-pagina">
+    		<img alt="logo de la universidad" src="../static/images/unju_utn.png" width="200" class="imagenes"> 
+    		
+    			<p  class="texto">Derechos de autor © 2024 - FACULTAD DE INGIENERIA - UNJU</p>
+ 				<p class="texto"><a href="https://www.fi.unju.edu.ar/">Pagina oficial de la facultad</a>
+    			<p class="texto"><a href="https://www.facebook.com/fiunju/?locale=es_LA">Facebook de la facultad</a>
+    			<p class="texto">Teléfono: 0388 422-1580 </p>
+    			
+    		</footer>	
 	
 	
 	
