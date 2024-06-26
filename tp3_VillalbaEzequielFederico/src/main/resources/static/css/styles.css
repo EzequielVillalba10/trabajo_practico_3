@@ -2,90 +2,69 @@
 
 body{
 	
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
 	
-}
-
-#encabezado {
-	background-color: black;
-	color: white;
-	padding: 20px;
-	text-align: center;
-}
-
-#registro{
-	background-color:   #400080;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	border-style: solid;
-	border-width: 5px;
-	border-radius: 15px;
+	background-color: #21618C;
+	color: #D0D3D4;
+	border: 3px solid black;
 	
-}
-
-.menu{
-	text-align: center;
-	padding: 10px;
-	background-color:  #1a1a1a;
-	color: white;
-	border: 2px solid #fff; 
-    padding: 20px; 
-	
-}
-.link{
-	color: white;
-}
-
-.contenidoPrincipal{
-	padding: 14px;
-	background-color: #1a1a1a;
-	color: white;
-	text-align: center;
-	font-weight: lighter;
-}
-
-.secciones{
-	 border: 2px solid #fff; /* Grosor y color del borde */
-    padding: 20px; /* Espacio interno dentro del borde */
-}
-
-.titulosdeSeleccion{
-	font-family: 'Roboto Slab', serif;
-	font: oblique bold 120% cursive;
-}
-
-.texto{
-	  font: bold 90% monospace;
-	
-}
-
-.imagenes{
-	border-style: solid;
-	border-width: 10px;
-	border-color:  #808080;
-	border-radius: 25px;
-	padding: 10px;
-}
-
-.contenidoAdicional{
-	background-color: black;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	
-}
-
-.fondoFormulario{
-	background-image: url(../images/pink-blue-explosion-22ezhnbhxa15e0fv.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat;
-
+	padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    font-family: 'Open Sans', sans-serif;
     
 }
 
+
+#encabezado{
+	justify-content: center;
+	text-align: center;
+}
+
+
+.menu {
+	justify-content: center;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.contenidoPrincipal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tablaProfesores {
+  border: 2px solid #14B17F ;
+  border-radius: 2px;
+  width: 100%; 
+  margin: 20px auto; 
+   background-color: #50C19D; 
+  padding: 10px;
+  color: white;
+}
+
+.contenidoAdicional{
+	text-align: center;
+	
+	
+}
+
+.imagen-spring{
+	
+	width: 240px;
+	height: 250px;
+	
+}
+
+.java-imagen{
+	
+	width: 30%;
+	border-radius: 17px;
+}
+
+/* Estilos para el formulario cliente*/
 
 .campo{
     width: 40%;
@@ -98,10 +77,10 @@ body{
     font-size: 16px;
 }
 
-/* Estilo para los botones */
+
 #boton-registrar
 {
-    background-color:  #6600cc;
+    background-color:  #077824;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -111,23 +90,34 @@ body{
     font-size: 16px;
 }
 
-#piePagina{
-	margin-right: 10px;
-    text-decoration: none;
-    color: #333;
-    margin-top: 20px;
-    text-align: center;
+.pie-de-pagina{
+	text-align: center;
 }
 
-.titulospequeños{
-	color:  #9900cc;
-	font-size: 20px;
-    font-weight: bold;
-	
+#registro {
+	text-align: center;
 }
 
-label{
-	font-size: 15px;
-	font-family: monospace;
-}
 
+
+
+        .campo {
+            padding: 8px; 
+            margin-bottom: 10px; 
+        }
+
+      
+        .seleccionGenero {
+            margin-bottom: 15px;
+        }
+
+        
+        .nombreInput {
+            margin-bottom: 10px; 
+        }
+
+    
+        #sugerencias {
+            padding: 8px; 
+            margin-bottom: 10px; 
+        }
